@@ -1,0 +1,12 @@
+# We always want the loopback interface.
+auto lo
+iface lo inet loopback
+
+# An example ethernet card setup: (broadcast and gateway are optional)
+auto eth0
+iface eth0 inet static
+    address 192.168.2.99
+    network 192.168.2.0
+    netmask 255.255.255.0
+    broadcast 192.168.2.255
+    gateway 192.168.2.1
