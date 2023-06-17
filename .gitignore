@@ -1,0 +1,7 @@
+# files
+auRamdisk
+boot.scr
+uRamdisk
+
+# folders
+busybox/

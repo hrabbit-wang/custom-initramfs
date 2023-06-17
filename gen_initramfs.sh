@@ -106,4 +106,9 @@ popd
 cp ${build_root}/{uRamdisk,boot.scr} ./ 
 rm ${build_root}/{uRamdisk,boot.*}
 
+# generate android boot.img
+#mkbootimg --kernel zImage --ramdisk ramdisk.img.gz -o --boot.img
+# format ramdisk
+# mkimage -A arm -O linux -T ramdisk -C none -n ramdisk -d uRamdisk auRamdisk
+
 echo "Finished"
